@@ -1,0 +1,364 @@
+.setting-icon {
+    height: 100%;
+    line-height: 60px;
+    right: 20px;
+    color: #fff
+}
+
+.setting-icon i {
+    font-size: 26px;
+    font-weight: bold;
+    cursor: pointer
+}
+
+.erp-header {
+    position: relative
+}
+
+.erp-header .erp-nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    border-radius: 0
+}
+
+.erp-header .user-list {
+    display: flex;
+    align-items: center
+}
+
+.erp-header .user-list li {
+    margin: 0 5px
+}
+
+.erp-header .user-list li a {
+    display: flex;
+    align-items: center;
+    color: #fff
+}
+
+.erp-header .user-list li a i {
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 10px
+}
+
+.erp-header .nav-list {
+    display: flex;
+    align-items: center;
+    margin-left: 10px
+}
+
+.erp-header .nav-list .list-item {
+    margin: 0 10px
+}
+
+.erp-header .nav-list .list-item a {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 5px;
+    font-size: 16px
+}
+
+.common-dropdown {
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    background-color: #f4f4f4;
+    display: none;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2)
+}
+
+.common-dropdown .close-icon {
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+    border: 1px solid #333;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    box-sizing: content-box;
+    border-radius: 50%
+}
+
+.second-menu {
+    height: 100%;
+    overflow-y: auto
+}
+
+.menu-group .g-title {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px
+}
+
+.menu-group .g-list {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap
+}
+
+.menu-group .g-list .g-list-item {
+    padding: 10px 20px;
+    max-width: 300px;
+    min-width: 200px
+}
+
+.menu-group .g-list .g-list-item .item-title {
+    font-size: 16px;
+    font-weight: bold
+}
+
+.menu-group .g-list .g-list-item .item-title::before {
+    content: '\e654';
+    font-family: layui-icon;
+    margin-right: 3px
+}
+
+.menu-group .g-list .g-list-item .item-warp {
+    padding-left: 20px
+}
+
+.menu-group .g-list .g-list-item .item-warp > dd {
+    margin: 10px 0
+}
+
+.menu-group .g-list .g-list-item .item-warp > dd .num {
+    color: #FF5722;
+    margin-right: 5px
+}
+
+.menu-group .g-list .g-list-item .item-warp > dd .num-add {
+    color: #009688
+}
+
+.menu-group .g-list .g-list-item .item-warp > dd::before {
+    content: '\e67e';
+    font-family: layui-icon;
+    margin-right: 3px;
+    vertical-align: middle
+}
+
+.menu-group .g-list .g-list-item .item-warp > dd a:hover {
+    color: #FF5722;
+    transition: all 0.2s ease
+}
+
+.menu-group .g-list .g-list-item .item-warp > dd ul li {
+    margin: 5px
+}
+
+.menu-group .g-list .g-list-item .item-warp .unset-before::before {
+    display: none
+}
+
+.time-warp {
+    margin: 0 5px;
+    border: 1px solid #666;
+    line-height: 28px;
+    padding: 0 5px;
+    display: inline-block;
+    color: #666
+}
+
+.time-warp input {
+    border: 0;
+    width: 130px;
+    height: 28px;
+    font-size: 12px;
+    background-color: transparent
+}
+
+.time-warp::after {
+    content: "\e625";
+    font-size: 14px;
+    font-family: 'layui-icon';
+    color: #666
+}
+
+.select-warp {
+    height: 30px;
+    width: 120px;
+    font-size: 12px;
+    color: #666;
+    border-color: #666;
+    padding-left: 5px;
+    background-color: transparent
+}
+
+.select-warp input {
+    height: 30px;
+    background-color: transparent;
+    border-color: #666
+}
+
+.wukong {
+    background-color: #fff;
+    padding: 20px 0
+}
+
+.wukong .w-header {
+    padding: 0 20px
+}
+
+.wukong .w-header ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+
+.wukong .w-header ul li {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: center;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    height: 100px;
+    text-align: center;
+    margin: 0 10px
+}
+
+.wukong .w-header ul li div .num {
+    font-size: 30px;
+    position: relative
+}
+
+.wukong .w-header ul li div .num .num-hint {
+    position: absolute;
+    top: -12px;
+    right: -10px;
+    display: inline-block;
+    padding: 0 5px;
+    text-align: center;
+    line-height: 16px;
+    background-color: #FF5722;
+    border-radius: 14px;
+    color: #fff;
+    font-size: 12px
+}
+
+.wukong .w-header ul li p {
+    color: #9B9B9B
+}
+
+.wukong .wk-body {
+    padding: 20px
+}
+
+.wukong .wk-body .wk-chart-box .chart-group {
+    float: left;
+    margin-bottom: 10px
+}
+
+.wukong .wk-body .wk-chart-box .chart-group .chart-group-inner {
+    background-color: #f3f3f3;
+    padding: 10px
+}
+
+.wukong .wk-body .wk-chart-box .chart-group .rank_box {
+    background-color: #fff;
+    border: 1px solid #ddd
+}
+
+.wukong .wk-body .wk-chart-box .chart-group .cg-top {
+    line-height: 30px;
+    margin-bottom: 10px
+}
+
+.wukong .wk-body .wk-chart-box .chart-group .cg-top a {
+    margin: 0 5px
+}
+
+.wukong .wk-body .wk-chart-box .chart-group hr {
+    margin: 15px 0
+}
+
+.wukong .wk-body .wk-chart-box .chart-group .cg-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end
+}
+
+.wukong .wk-body .wk-chart-box .chart-group .cg-title .title-txt {
+    font-size: 16px
+}
+
+.wukong .wk-body .wk-chart-box .chart-group .cg-title .icon-orderby {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/icon_orderby.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: middle
+}
+
+.wukong .wk-body .wk-chart-box .chart-group .cg-center {
+    height: 280px
+}
+
+.wukong .wk-body .wk-chart-box .chart-group .cg-bottom {
+    text-align: center;
+    color: #666
+}
+
+.wukong .wk-body .wk-chart-box .chart-group .cg-list .list-item {
+    line-height: 30px;
+    font-size: 12px
+}
+
+.wukong .wk-body .wk-chart-box .chart-group .cg-list .list-item .left {
+    text-align: center
+}
+
+.wukong .wk-body .wk-chart-box .chart-group .cg-list .list-item .center {
+    padding-left: 10px;
+    text-align: left
+}
+
+.wukong .wk-body .wk-chart-box .chart-group .cg-list .list-item .right {
+    color: #FF0000;
+    text-align: right
+}
+
+.wukong .wk-body .wk-chart-box:after {
+    content: '';
+    display: inline-block;
+    clear: both
+}
+
+.wukong .wk-body .wk-chart-box .layui-col-md3-5 {
+    width: 28.63387%
+}
+
+.user-info {
+    padding: 20px
+}
+
+.user-info form {
+    margin: auto;
+    line-height: 38px;
+    width: 800px
+}
+
+.user-info form .ui-title {
+    width: 200px;
+    padding: 0 15px;
+    line-height: 38px
+}
+
+.user-info form .hint-warm {
+    color: #FF0000
+}
+
+.user-info form .time {
+    color: #FF5722
+}

@@ -1,0 +1,726 @@
+body {
+  height: 100vh;
+}
+
+.erp-layout {
+  height: 6.5vh;
+}
+
+.setting-icon {
+  height: 100%;
+  line-height: 6.5vh;
+  right: 20px;
+  color: #fff;
+}
+
+.setting-icon i {
+  font-size: 3vh;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.erp-header {
+  position: relative;
+  height: 100%;
+}
+
+.erp-header .erp-nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  border-radius: 0;
+}
+
+.erp-header .user-list {
+  display: flex;
+  align-items: center;
+}
+
+.erp-header .user-list li {
+  margin: 0 0.3vw;
+}
+
+.erp-header .user-list li a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 1.5vh;
+}
+
+.erp-header .user-list li a i {
+  font-size: 3vh;
+  font-weight: bold;
+  margin-right: 0.5vw;
+}
+
+.erp-header .user-list li a span {
+  font-size: 1.5vh;
+}
+
+.erp-header .nav-list {
+  display: flex;
+  align-items: center;
+  margin-left: 0.5vw;
+}
+
+.erp-header .nav-list .list-item {
+  margin: 0 0.5vw;
+}
+
+.erp-header .nav-list .list-item a {
+  background-color: #fff;
+  background-color: #fff;
+  padding: 0.8vh 1.8vh;
+  display: block;
+  border-radius: 5px;
+  font-size: 1.6vh;
+}
+
+.common-dropdown {
+  position: absolute;
+  width: 100%;
+  top: 60px;
+  background-color: #f4f4f4;
+  display: none;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+}
+
+.common-dropdown .close-icon {
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  cursor: pointer;
+  border: 1px solid #333;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  box-sizing: content-box;
+  border-radius: 50%;
+}
+
+.second-menu {
+  display: flex;
+}
+
+.menu-group .g-title {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.menu-group .g-list {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.menu-group .g-list .g-list-item {
+  padding: 10px 20px;
+  max-width: 300px;
+  min-width: 200px;
+}
+
+.menu-group .g-list .g-list-item .item-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.menu-group .g-list .g-list-item .item-title::before {
+  content: '\e654';
+  font-family: layui-icon;
+  margin-right: 3px;
+}
+
+.menu-group .g-list .g-list-item .item-warp {
+  padding-left: 20px;
+}
+
+.menu-group .g-list .g-list-item .item-warp > dd {
+  margin: 10px 0;
+}
+
+.menu-group .g-list .g-list-item .item-warp > dd .num {
+  color: #FF5722;
+  margin-right: 5px;
+}
+
+.menu-group .g-list .g-list-item .item-warp > dd .num-add {
+  color: #009688;
+}
+
+.menu-group .g-list .g-list-item .item-warp > dd .layui-icon {
+  color: #333;
+  vertical-align: middle;
+}
+
+.menu-group .g-list .g-list-item .item-warp > dd a:hover {
+  color: #FF5722;
+  transition: all 0.2s ease;
+}
+
+.menu-group .g-list .g-list-item .item-warp > dd ul li {
+  margin: 5px;
+}
+
+.menu-group .g-list .g-list-item .item-warp .unset-before::before {
+  display: none;
+}
+
+.time-warp {
+  margin: 0 5px;
+  border: 1px solid #666;
+  line-height: 28px;
+  padding: 0 5px;
+  display: inline-block;
+  color: #666;
+}
+
+.time-warp input {
+  border: 0;
+  width: 140px;
+  height: 28px;
+  font-size: 12px;
+  background-color: transparent;
+}
+
+.time-warp::after {
+  content: "\e625";
+  font-size: 14px;
+  font-family: 'layui-icon';
+  color: #666;
+}
+
+.select-warp {
+  height: 30px;
+  width: 120px;
+  font-size: 12px;
+  color: #666;
+  border-color: #666;
+  padding-left: 5px;
+  background-color: transparent;
+}
+
+.select-warp input {
+  height: 30px;
+  background-color: transparent;
+  border-color: #666;
+}
+
+.wukong {
+  background-color: #fff;
+  padding: 20px 0;
+}
+
+.wukong .w-header {
+  padding: 0 20px;
+}
+
+.wukong .w-header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.wukong .w-header ul li {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  justify-content: center;
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+  height: 100px;
+  text-align: center;
+  margin: 0 10px;
+  width: 15%;
+}
+
+.wukong .w-header ul li div .num {
+  font-size: 30px;
+  position: relative;
+}
+
+.wukong .w-header ul li div .num .num-hint {
+  position: absolute;
+  top: -12px;
+  right: -10px;
+  display: inline-block;
+  padding: 0 5px;
+  text-align: center;
+  line-height: 16px;
+  background-color: #FF5722;
+  border-radius: 14px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.wukong .w-header ul li p {
+  color: #9B9B9B;
+}
+
+.wukong .wk-body {
+  padding: 20px;
+}
+
+.wukong .wk-body .wk-chart-box .chart-group {
+  float: left;
+  margin-bottom: 10px;
+}
+
+.wukong .wk-body .wk-chart-box .chart-group .chart-group-inner {
+  background-color: #f3f3f3;
+  padding: 10px;
+}
+
+.wukong .wk-body .wk-chart-box .chart-group .rank_box {
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.wukong .wk-body .wk-chart-box .chart-group .cg-top {
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.wukong .wk-body .wk-chart-box .chart-group .cg-top a {
+  margin: 0 5px;
+}
+
+.wukong .wk-body .wk-chart-box .chart-group hr {
+  margin: 15px 0;
+}
+
+.wukong .wk-body .wk-chart-box .chart-group .cg-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.wukong .wk-body .wk-chart-box .chart-group .cg-title .title-txt {
+  font-size: 16px;
+}
+
+.wukong .wk-body .wk-chart-box .chart-group .cg-title .icon-orderby {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/icon_orderby.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+
+.wukong .wk-body .wk-chart-box .chart-group .cg-center {
+  height: 280px;
+}
+
+.wukong .wk-body .wk-chart-box .chart-group .cg-bottom {
+  text-align: center;
+  color: #666;
+}
+
+.wukong .wk-body .wk-chart-box .chart-group .cg-list .list-item {
+  line-height: 30px;
+  font-size: 12px;
+}
+
+.wukong .wk-body .wk-chart-box .chart-group .cg-list .list-item .left {
+  text-align: center;
+}
+
+.wukong .wk-body .wk-chart-box .chart-group .cg-list .list-item .center {
+  padding-left: 10px;
+  text-align: left;
+}
+
+.wukong .wk-body .wk-chart-box .chart-group .cg-list .list-item .right {
+  color: #FF0000;
+  text-align: right;
+}
+
+.wukong .wk-body .wk-chart-box:after {
+  content: '';
+  display: inline-block;
+  clear: both;
+}
+
+.wukong .wk-body .wk-chart-box .layui-col-md3-5 {
+  width: 27.99%;
+}
+
+.section-layout .layui-table, .section-layout .layui-table-view {
+  margin: 0;
+}
+
+.section-layout .section-tab {
+  margin: 0;
+  height: 93.5vh;
+}
+
+.section-layout .section-tab .section-tab-content {
+  height: calc(100% - 10px);
+}
+
+.section-layout .section-tab .section-tab-content .section-tab-item {
+  height: 100%;
+}
+
+.section-layout .section-tab .section-tab-content .section-tab-item .section-item-con {
+  height: 100%;
+}
+
+.section-layout table tr th, .section-layout table tr td {
+  text-align: center;
+}
+
+.section-layout .tr-checked {
+  background-color: #f1e5bb;
+}
+
+.section-layout .tr-checked:hover {
+  background-color: #f1e5bb;
+}
+
+ .img-box {
+  height: 100%;
+}
+
+ .img-box img {
+  width: unset;
+  max-height: 50px;
+}
+
+.section-form {
+  background-color: #eeeeee;
+  height: 100%;
+  overflow-y: auto;
+  width: 13%;
+}
+
+.section-form .section-form-item {
+  margin-bottom: 1px;
+  padding: 5px;
+  text-align: center;
+}
+
+.section-form .section-form-item .layui-form-label {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+  padding: 5px 0;
+}
+
+.section-form .section-form-item .layui-input-inline {
+  width: 100%;
+}
+
+.section-table {
+  width: 87%;
+}
+
+.section-table, .table-list {
+  height: 100%;
+  overflow-y: auto;
+}
+
+/*.table-list {*/
+/*  display: none;*/
+/*}*/
+
+.table-list-active {
+  display: block;
+}
+
+.section-list {
+  height: 100%;
+}
+
+.section-list .info-hint {
+  border: 1px solid #cccccc;
+  line-height: 3.8vh;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  overflow-y: auto;
+}
+
+.section-list .info-hint .i-operate {
+  color: #009688;
+  margin: 0 10px;
+}
+
+.section-list .table-box {
+  height: calc(100% - 9vh);
+  overflow-y: auto;
+}
+
+.li-group {
+  height: 3.8vh;
+  margin-bottom: 1vh;
+  padding: 0 1vh;
+}
+
+.li-group .btn-active {
+  background-color: #009688;
+}
+
+.li-group .li-group-right {
+  text-align: right;
+}
+
+.li-group button {
+  height: 3.8vh;
+  line-height: 3.8vh;
+}
+
+.section-right {
+  height: 100%;
+}
+
+.section-right .relation-table {
+  height: 30vh;
+  overflow-y: auto;
+}
+
+.relation-box {
+  border: 1px solid #cccccc;
+  height: calc(100% - 31vh);
+  overflow-y: auto;
+}
+
+.relation-box .rb-group {
+  overflow-x: auto;
+  border-bottom: 1px solid #cccccc;
+}
+
+.relation-box .rb-group:last-child {
+  border-bottom: none;
+}
+
+.relation-box .rb-group .group-dt {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 10px;
+}
+
+.relation-box .rb-group .group-dd-dt {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.relation-box .rb-group .group-dd-dt, .relation-box .rb-group .group-dd-dd {
+  line-height: 3vh;
+  padding: 0.3vh 10px;
+}
+
+.relation-box .rb-group .group-dd-dt .layui-input-inline, .relation-box .rb-group .group-dd-dd .layui-input-inline {
+  margin: 5px 0;
+}
+
+.relation-box .rb-group .ul-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 10vh;
+  overflow-y: auto;
+}
+
+.relation-box .rb-group .ul-list li {
+  margin-right: 20px;
+}
+
+.layer-modal {
+  /*display: none;*/
+  height: 100%;
+  padding: 10px 20px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.layer-modal table tr th, .layer-modal table tr td {
+  text-align: center;
+}
+
+.color-modal-top {
+  margin-bottom: 10px;
+}
+
+.color-modal-top .top-left {
+  float: left;
+}
+
+.color-modal-top .top-right {
+  float: right;
+}
+
+.color-modal-top::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.add-color-modal .layui-input-block {
+  margin-left: 0;
+}
+
+.add-color-modal .label-txt {
+  width: 100%;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.add-color-modal .btn-save-color {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+.matter-modal .layui-table, .matter-modal .layui-table-view {
+  margin: 0;
+}
+
+.matter-modal .relation-box {
+  height: auto;
+}
+
+.matter-modal .relation-box .rb-group {
+  height: 30vh;
+  overflow-y: auto;
+}
+
+.matter-modal .relation-box .rb-group .group-dt h3 {
+  font-weight: bold;
+}
+
+.matter-parameter-modal table tr td, .matter-parameter-modal table tr th, .add-application-modal table tr td, .add-application-modal table tr th {
+  padding: 9px 0;
+}
+
+.matter-parameter-modal .w-50, .matter-parameter-modal .w-80, .matter-parameter-modal .w-100, .add-application-modal .w-50, .add-application-modal .w-80, .add-application-modal .w-100 {
+  padding: 0 5px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.matter-parameter-modal input, .add-application-modal input {
+  display: inline-block;
+}
+
+.matter-parameter-modal .w-50, .add-application-modal .w-50 {
+  width: 50px;
+}
+
+.matter-parameter-modal .w-80, .add-application-modal .w-80 {
+  width: 80px;
+}
+
+.matter-parameter-modal .w-100, .add-application-modal .w-100 {
+  width: 100px;
+}
+
+.matter-parameter-modal .matter-content, .add-application-modal .matter-content {
+  height: calc(100% - 10vh);
+  overflow-y: auto;
+}
+
+.matter-parameter-modal .add, .add-application-modal .add {
+  width: 100px;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+.matter-parameter-modal .add div, .add-application-modal .add div {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #009688;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.matter-parameter-modal .add div i, .add-application-modal .add div i {
+  color: #ffffff;
+}
+
+.matter-parameter-modal .add p, .add-application-modal .add p {
+  text-align: center;
+  color: #009688;
+}
+
+.matter-parameter-modal .matter-btns, .add-application-modal .matter-btns {
+  text-align: center;
+}
+
+.matter-parameter-modal .matter-btns .btn-save-matter, .add-application-modal .matter-btns .btn-save-matter {
+  width: 120px;
+}
+
+.add-application-modal table tr th, .add-application-modal table tr td {
+  padding: 9px 15px;
+  text-align: left;
+}
+
+.fixed_value {
+  display: none;
+}
+
+.matter-modal .layui-table-cell, .matter-parts-modal .layui-table-cell, .matter-parameter-modal .layui-table-cell {
+  line-height: 40px;
+  height: 40px;
+}
+
+.bg-ddd {
+  background-color: #dddddd !important;
+}
+
+.user-info {
+  padding: 20px;
+}
+
+.user-info form {
+  margin: auto;
+  line-height: 38px;
+  width: 800px;
+}
+
+.user-info form .ui-title {
+  width: 200px;
+  padding: 0 15px;
+  line-height: 38px;
+}
+
+.user-info form .hint-warm {
+  color: #FF0000;
+}
+
+.user-info form .time {
+  color: #FF5722;
+}
+
+.matter-parameter-modal table {
+    table-layout: fixed;
+}
+
+.matter-parameter-modal table tr td, .matter-parameter-modal table tr th {
+    width: 160px;
+    padding: 9px 15px;
+}
+
+.matter-parameter-modal table tr td .img-box img, .matter-parameter-modal table tr th .img-box img {
+    width: 100%;
+    height: unset;
+}
+.border-bottom{
+  border-bottom: 1px solid #ccc;
+}
+.hide{
+  display: none;
+}
